@@ -13,7 +13,8 @@
   <script src="main.js" defer></script>
 </head>
 <body>
-  <!-- navbar -->
+  <!-- navbar 제일 상단-->
+  
   <nav id="navbar">
     <div class="navbar__logo">
       <i class="fab fa-diaspora"></i>
@@ -34,7 +35,7 @@
   <section id="home">
     <img src="/imgs/hks.PNG" alt="Hangueira's wedding" class="home__avatar">
     <h1 class="home__title">Hello, <br /> I'am Hangueira</h1>
-    <h2 class="home__desc">Day after day commit software engineer</h2>
+    <h2 class="home__desc">하루에 한번씩 COMMIT 하는 소프트웨어 엔지니어</h2>
     <button class="home__contact">Contact Me</button>
   </section>  
   <!-- about -->
@@ -117,7 +118,39 @@
     </div>
   </section>
   <!-- work -->
-  <section id="work"></section>
+  <section id="work">
+    <h1>My Works</h1>
+    <h3>projects</h3>
+    <div class="work__categories">
+      <button class="work__categories__btn">All<span class="work__categories__count">3</span></button>
+      <button class="work__categories__btn">Front-end<span class="work__categories__count">1</span></button>
+      <button class="work__categories__btn">Back-end<span class="work__categories__count">1</span></button>
+      <button class="work__categories__btn">Mobile<span class="work__categories__count">1</span></button>
+    </div>
+    <div class="work__projects">
+      <a href="www.naver.com" class="project" target="blank">
+        <img src="/imgs/projects/naver.PNG" alt="naver" class="project__img">
+        <div class="project__desc">
+          <h3>naver</h3>
+          <span>temp website</span>
+        </div>
+      </a>
+      <a href="www.naver.com" class="project" target="blank" >
+        <img src="/imgs/projects/naver.PNG" alt="naver" class="project__img">
+        <div class="project__desc">
+          <h3>naver2</h3>
+          <span>temp website2</span>
+        </div>
+      </a>
+      <a href="www.naver.com" class="project" target="blank">
+        <img src="/imgs/projects/naver.PNG" alt="naver" class="project__img">
+        <div class="project__desc">
+          <h3>naver3</h3>
+          <span>temp website3</span>
+        </div>
+      </a>
+    </div>
+  </section>
   <!-- testimonials -->
   <section id="testimonials"></section>
   <!-- contact -->
