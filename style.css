@@ -9,6 +9,8 @@
  - 폰트 사이즈 정리
 
 4. navbar 수정 CSS 처리
+
+5. home 수정 CSS 처리
 */
 
 /* 1. Grobal setting */
@@ -89,6 +91,12 @@ p {
   margin: 4px 0;
 }
 
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
 /* Navbar */
 
 #navbar {
@@ -98,7 +106,7 @@ p {
   align-items: center;
   background-color: var(--blue-light);
   color: var(--white);
-  padding: 16px;
+  padding: 8px;
 }
 
 .navbar__menu {
@@ -111,7 +119,7 @@ p {
 }
 
 .navbar__menu__item {
-  padding: 8px, 12px;
+  padding: 8px 16px;
   margin: 0 4px;
   border-radius: var(--size-border-radius);
 }
@@ -123,4 +131,32 @@ p {
 
 .navbar__menu__item:hover {
   background-color: var(--blue);
+}
+
+#home {
+  background-color: var(--white);
+  padding: 40px;
+  text-align: center;
+}
+
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--white);
+}
+
+.home__contact {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--blue);
+  border-radius: var(--size-border-radius);
+}
+
+.home__contact:hover {
+  background-color: var(--blue);
+  color: var(--white);
+  transition: all 0.5s ease-out;
 }
