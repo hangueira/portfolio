@@ -7,6 +7,8 @@
 
 3. Typography
  - 폰트 사이즈 정리
+
+4. navbar 수정 CSS 처리
 */
 
 /* 1. Grobal setting */
@@ -33,11 +35,28 @@
   --weight-regular: 400;
 
   /* Size */
+  --size-border-radius: 4px;
 }
 
 /* 2. Universal tags 정리 */
 * {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 /* 3. Typography */
@@ -68,4 +87,40 @@ p {
   font-weight: var(--weight-regular);
   color: var(--black-small);
   margin: 4px 0;
+}
+
+/* Navbar */
+
+#navbar {
+  display: flex;
+  /* 중심축 정렬 */
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--blue-light);
+  color: var(--white);
+  padding: 16px;
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__logo {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+}
+
+.navbar__menu__item {
+  padding: 8px, 12px;
+  margin: 0 4px;
+  border-radius: var(--size-border-radius);
+}
+
+.navbar__menu__item.active {
+  border: 1px solid var(--white);
+  border-radius: var(--size-border-radius);
+}
+
+.navbar__menu__item:hover {
+  background-color: var(--blue);
 }
