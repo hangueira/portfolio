@@ -1,0 +1,71 @@
+/* 
+1. Grobal setting 하기
+ - Color, Font size, Font weight, Size
+
+2. Universal tags 정리
+ - box-sizing
+
+3. Typography
+ - 폰트 사이즈 정리
+*/
+
+/* 1. Grobal setting */
+:root {
+  /* color */
+  --blue: #2f5fd2;
+  --blue-light: #3182f6;
+  --white: #ffffff;
+  --black-small: #3b3b46;
+  --black-big: #4f4f5d;
+  --black-mid: #333d4b;
+  --gray-light: #8b95a1;
+
+  /* Font size */
+  --font-lage: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+}
+
+/* 2. Universal tags 정리 */
+* {
+  box-sizing: border-box;
+}
+
+/* 3. Typography */
+
+h1 {
+  font-size: var(--font-lage);
+  font-weight: var(--weight-bold);
+  color: var(--black-big);
+  margin: 16px 0;
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--black-mid);
+  margin: 8px 0;
+}
+
+h2 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--black-small);
+  margin: 8px 0;
+}
+
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--black-small);
+  margin: 4px 0;
+}
