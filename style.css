@@ -145,8 +145,6 @@ button {
   
 }
 
-
-
 .home__avatar {
   width: 250px;
   height: 250px;
@@ -175,9 +173,12 @@ button {
   padding: 50px;
   text-align : center;
   /* 보통 데스탑에서 1000 ~ 1200px 편하게 볼수 있는 사이즈 */
-  max-width: 1200px;
   margin : auto;
+}
 
+.section__container {
+  max-width: 1200px;
+  margin: auto;
 }
 
 .about__majors {
@@ -232,4 +233,54 @@ button {
 
 .job__period {
   font-size: var(--font-micro);
+}
+
+#skills {
+  background: var(--blue-light);
+}
+
+.skillset {
+  display: flex; 
+  background: var(--gray-light);
+  color: var(--white);
+  margin:20px 0px;
+}
+
+.skillset__left {
+  flex-basis: 60%;
+  background: var(--black-small);
+  padding: 20px;
+}
+
+.skillset__right {
+  flex-basis: 40%;
+}
+
+.skillset__right .tools {
+  background: var(--black-big);
+}
+
+.tools, .etc {
+  padding: 20px;
+}
+
+.skillset__title {
+  color: var(--white);
+}
+
+.skill__desc {
+  display: flex;
+  justify-content: space-between;
+}
+.skill__bar {
+  /* div에 내용이 없기때문에 width height 꼭 넣어줘야함 */
+  width: 100%;
+  height: 3px;
+  background: var(--gray-light);
+  margin-bottom: 32px;
+}
+
+.skill__value {
+  height: 3px;
+  background: orange;
 }
