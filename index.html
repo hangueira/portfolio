@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hangueira portfolio</title>
+  <title>Hangueira's portfolio</title>
   <meta name="author" content="Hangueira">
   <link rel="icon" type="image/png" href="imgs/favicon.png">
   <script src="https://kit.fontawesome.com/30a61f7041.js" crossorigin="anonymous"></script>
@@ -12,13 +13,14 @@
   <link rel="stylesheet" href="style.css">
   <script src="main.js" defer></script>
 </head>
+
 <body>
   <!-- navbar 제일 상단-->
-  
+
   <nav id="navbar">
     <div class="navbar__logo">
-      <i class="fab fa-diaspora"></i>
-      <a href="#" class="navbar__logo__name">HANGUEIRA</a>
+      <i class="fas fa-splotch"></i>
+      <a href="#" class="navbar__logo__name">Hangueira</a>
     </div>
     <div class="navbar__menu">
       <ul class="navbar__menu">
@@ -33,13 +35,15 @@
   </nav>
   <!-- home -->
   <section id="home">
-    <img src="/imgs/hks.PNG" alt="Hangueira's wedding" class="home__avatar">
-    <h1 class="home__title">Hello, <br /> I'am Hangueira</h1>
-    <h2 class="home__desc">하루에 한번씩 COMMIT 하는 소프트웨어 엔지니어</h2>
-    <button class="home__contact">Contact Me</button>
-  </section>  
+    <div class="home">
+      <img src="/imgs/hks.PNG" alt="Hangueira's wedding" class="home__avatar">
+      <h1 class="home__title">안녕하세요 <br /> 한경수입니다.</h1>
+      <h2 class="home__desc">하루에 한번씩 COMMIT 하기 위해 노력하는 소프트웨어 엔지니어입니다.</h2>
+      <button class="home__contact">Contact Me</button>
+    </div>
+  </section>
   <!-- about -->
-  <section id="about">
+  <section id="about" class="section">
     <h1 class="about__title">About me</h1>
     <p class="about__desc">하루하루 조금씩 배워나가는 개발자</p>
     <div class="about__majors">
@@ -47,34 +51,44 @@
         <div class="major__icon">
           <i class="fab fa-html5"></i>
         </div>
-        <div class="major__title">Front-end</div>
+        <h2 class="major__title">Front-end</h2>
         <div class="major__desc">HTML, CSS, JAVASCRIPT</div>
       </div>
       <div class="major">
         <div class="major__icon">
           <i class="fab fa-html5"></i>
         </div>
-        <div class="major__title">Mobile</div>
+        <h2 class="major__title">Mobile</h2>
         <div class="major__desc">HTML, CSS, JAVASCRIPT</div>
       </div>
       <div class="major">
         <div class="major__icon">
           <i class="fab fa-html5"></i>
         </div>
-        <div class="major__title">back-end</div>
+        <h2 class="major__title">back-end</h2>
         <div class="major__desc">JAVASCRIPT, JAVA, SERVLET</div>
       </div>
     </div>
     <div class="about__jobs">
       <div class="job">
         <img src="/imgs/shinhan.PNG" alt="shinhan">
-        <p class="job__name">shinhan</p>
-        <p class="job__period">2017.05 ~ 현재</p>
+        <div class="job__description">
+          <p class="job__name">shinhan</p>
+          <p class="job__period">2017.05 ~ 현재</p>
+        </div>
+
+      </div>
+      <div class="job">
+        <img src="/imgs/shinhan.PNG" alt="shinhan">
+        <div class="job__description">
+          <p class="job__name">shinhan</p>
+          <p class="job__period">2017.05 ~ 현재</p>
+        </div>
       </div>
     </div>
   </section>
   <!-- skills -->
-  <section id="skills">
+  <section id="skills" class="section">
     <h1>Skills</h1>
     <h2>Skill & Attributes</h2>
     <P>wow</P>
@@ -118,7 +132,7 @@
     </div>
   </section>
   <!-- work -->
-  <section id="work">
+  <section id="work" class="section">
     <h1>My Works</h1>
     <h3>projects</h3>
     <div class="work__categories">
@@ -135,7 +149,7 @@
           <span>temp website</span>
         </div>
       </a>
-      <a href="https://www.naver.com" class="project" target="blank" >
+      <a href="https://www.naver.com" class="project" target="blank">
         <img src="/imgs/projects/naver.PNG" alt="naver" class="project__img">
         <div class="project__desc">
           <h3>naver2</h3>
@@ -152,14 +166,16 @@
     </div>
   </section>
   <!-- testimonials -->
-  <section id="testimonials">
+  <section id="testimonials" class="section">
     <h1>Testimonials</h1>
     <h3>see what they say about me</h3>
     <div class="testimonials">
       <div class="testimonial">
         <img src="/imgs/testimonial/people1.jpg" alt="people1">
         <div class="tesimonial__speechBubble">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, ad non voluptates repudiandae reprehenderit veritatis asperiores provident illo earum reiciendis perspiciatis unde possimus porro deleniti perferendis doloribus eum sed quibusdam!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, ad non voluptates repudiandae
+            reprehenderit veritatis asperiores provident illo earum reiciendis perspiciatis unde possimus porro deleniti
+            perferendis doloribus eum sed quibusdam!</p>
           <p class="name"><a href="">LYJ</a> / Shinhan</p>
         </div>
       </div>
@@ -167,7 +183,9 @@
     <div class="testimonials">
       <div class="testimonial">
         <div class="tesimonial__speechBubble">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, ad non voluptates repudiandae reprehenderit veritatis asperiores provident illo earum reiciendis perspiciatis unde possimus porro deleniti perferendis doloribus eum sed quibusdam!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, ad non voluptates repudiandae
+            reprehenderit veritatis asperiores provident illo earum reiciendis perspiciatis unde possimus porro deleniti
+            perferendis doloribus eum sed quibusdam!</p>
           <p class="name"><a href="">LYJ</a> / Shinhan</p>
         </div>
         <img src="/imgs/testimonial/people1.jpg" alt="people1">
@@ -175,7 +193,7 @@
     </div>
   </section>
   <!-- contact -->
-  <section id="contact">
+  <section id="contact" class="section">
     <h1>Let's talk</h1>
     <h3>hks713@naver.com</h3>
     <a href="https://github.com/hangueira/portfolio" target="_blank">
@@ -186,4 +204,5 @@
     </a>
   </section>
 </body>
+
 </html>
