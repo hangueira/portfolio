@@ -109,9 +109,29 @@ button {
   /* 중심축 정렬 */
   justify-content: space-between;
   align-items: center;
-  background-color: var(--blue-light);
-  color: var(--white);
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  color: var(--blue);
   padding: 8px;
+  transition: all var(--animaion-duration) ease;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--blue);
+  color: var(--white);
+  position: fixed;
+  padding: 8px;
+}
+
+.navbar__logo__name.navbar--dark {
+  padding: 1px; 
+  color: var(--white);
+}
+
+.navbar__logo a {
+  color: var(--blue);
+  transition: all var(--animaion-duration) ease;
 }
 
 .navbar__menu {
@@ -130,7 +150,7 @@ button {
 }
 
 .navbar__menu__item.active {
-  border: 1px solid var(--white);
+  border: 1px solid var(--blue);
   border-radius: var(--size-border-radius);
 }
 
@@ -150,7 +170,8 @@ button {
 
 #home {
   background-color: var(--white);
-  padding: 40px;
+  padding: 40px ;
+  padding-top: 130px;
   text-align: center;
   
 }
