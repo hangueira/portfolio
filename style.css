@@ -369,3 +369,47 @@ button {
 .project__desc h3 {
   color: var(--white);
 }
+
+/* Testimonial */
+
+#testimonials {
+  background-color: var(--gray-light);
+}
+
+.testimonials {
+  margin: 40px;
+}
+
+.testimonial {
+  display: flex;
+  margin: 32px 0px;
+  align-items: center;
+}
+
+.testimonial__avartar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.testimonial__avartar:nth-child(odd) {
+  margin-right: 40px;
+}
+
+.testimonial__avartar:nth-child(even) {
+  margin-left: 40px;
+}
+
+.tesimonial__speechBubble {
+  padding: 18px;
+  background-color: var(--white);
+  border-radius: var(--size-border-radius);
+}
+
+.tesimonial__speechBubble p {
+  color: var(--gray-light);
+}
+
+.tesimonial__speechBubble a {
+  color: var(--blue);
+}
