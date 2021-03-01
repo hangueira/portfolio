@@ -413,3 +413,26 @@ button {
 .tesimonial__speechBubble a {
   color: var(--blue);
 }
+
+#contact {
+  background-color: var(--blue-light);
+}
+
+.contact__email,
+.contact__title {
+  color: var(--white);
+}
+
+.contact__title {
+  margin: 32px 0px;
+}
+
+.contact__links {
+  font-size: var(--font-lage);
+  margin: 24px 0;
+}
+
+.contact__links i:hover {
+  transform: scale(1.1);
+  transition: all var(--animaion-duration) ease-in;
+}
