@@ -40,10 +40,8 @@
   --size-border-radius: 4px;
 
   /* Animation  */
-  --animaion-duration: 300ms
+  --animaion-duration: 300ms;
 }
-
-
 
 /* 2. Universal tags 정리 */
 * {
@@ -126,7 +124,7 @@ button {
 }
 
 .navbar__logo__name.navbar--dark {
-  padding: 1px; 
+  padding: 1px;
   color: var(--white);
 }
 
@@ -166,16 +164,13 @@ button {
   font-size: 24px;
   color: var(--white);
   display: none;
-
 }
 
 #home {
   background-color: var(--white);
-  padding: 40px ;
+  padding: 40px;
   padding-top: 130px;
   text-align: center;
-
-  
 }
 
 .home__avatar {
@@ -204,9 +199,9 @@ button {
 /* class section의 공통부분을 정리한다. */
 .section {
   padding: 50px;
-  text-align : center;
+  text-align: center;
   /* 보통 데스탑에서 1000 ~ 1200px 편하게 볼수 있는 사이즈 */
-  margin : auto;
+  margin: auto;
 }
 
 .section__container {
@@ -218,7 +213,6 @@ button {
   display: flex;
   justify-content: space-between;
   margin: 80px 0px;
-
 }
 
 .major__icon {
@@ -233,7 +227,8 @@ button {
   margin-bottom: 16px;
 }
 
-.major__title, .major__desc {
+.major__title,
+.major__desc {
   color: var(--black-small);
 }
 
@@ -255,9 +250,9 @@ button {
   margin: 0 16px;
   text-align: left;
 }
-.job__name, .job__period {
+.job__name,
+.job__period {
   color: var(--black-small);
-  
 }
 
 .job__name {
@@ -273,10 +268,10 @@ button {
 }
 
 .skillset {
-  display: flex; 
+  display: flex;
   background: var(--gray-light);
   color: var(--white);
-  margin:20px 0px;
+  margin: 20px 0px;
 }
 
 .skillset__left {
@@ -293,7 +288,8 @@ button {
   background: var(--black-big);
 }
 
-.tools, .etc {
+.tools,
+.etc {
   padding: 20px;
 }
 
@@ -321,11 +317,11 @@ button {
 /* Works */
 
 .work__categories {
-  margin : 40px;
+  margin: 40px;
 }
 
 .work__categories__btn {
-  border:1px solid var(--blue-light);
+  border: 1px solid var(--blue-light);
   border-radius: var(--size-border-radius);
   font-size: var(--font-regular);
   padding: 8px 48px;
@@ -347,9 +343,9 @@ button {
   background-color: red;
   border-radius: 50%;
   color: var(--white);
-  width:24px;
-  height:24px;
-  line-height:24px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
   display: inline-block;
   position: relative;
   top: -20px;
@@ -468,6 +464,26 @@ button {
 .contact__links i:hover {
   transform: scale(1.1);
   transition: all var(--animaion-duration) ease-in;
+}
+
+.arrow-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  font-size: 50px;
+  color: var(--white);
+  background-color: var(--blue);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 300ms ease-in;
+  pointer-events: none;
+}
+
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 @media screen and (max-width: 768px) {
