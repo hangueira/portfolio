@@ -330,6 +330,7 @@ button {
   border-radius: var(--size-border-radius);
   font-size: var(--font-regular);
   padding: 8px 48px;
+  position: relative;
 }
 
 .work__categories__btn.active,
@@ -352,9 +353,9 @@ button {
   height: 24px;
   line-height: 24px;
   display: inline-block;
-  position: relative;
+  position: absolute;
   top: -20px;
-  left: 4px;
+  right: 8px;
   opacity: 0;
   transition: all var(--animaion-duration) ease;
 }
@@ -502,8 +503,20 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-lage: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+
   .navbar__toggle-btn {
     display: block;
+    top: 12px;
+    right: 16px;
+    font-size: var(--font-medium);
   }
 
   .navbar__toggle-btn i {
@@ -525,8 +538,14 @@ button {
     display: block;
   }
 
+  .section {
+    padding: 16px;
+    padding-top: 40px;
+  }
   .about__majors {
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0px;
   }
 
   .major {
@@ -535,12 +554,40 @@ button {
   .skillset {
     flex-direction: column;
   }
+  .work__categories__btn {
+    margin: 4px 0;
+    width: 100%;
+  }
 
   .project {
     flex-grow: 1;
   }
+
+  .testimonial {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .testimonial__avartar {
     width: 80px;
     height: 80px;
+  }
+
+  .testimonial__avartar:nth-child(even),
+  .testimonial__avartar:nth-child(odd) {
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  .tesimonial__speechBubble {
+    order: 1;
+  }
+  .arrow-up {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    right: 16px;
+    bottom: 16px;
   }
 }
