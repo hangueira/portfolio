@@ -155,8 +155,13 @@ button {
 
 .navbar__menu__item:hover {
   background-color: var(--blue);
+  color: var(--white);
 }
 
+.navbar__menu__item:hover .navbar--dark {
+  background-color: var(--white);
+  color: var(--blue);
+}
 .navbar__toggle-btn {
   position: absolute;
   top: 15px;

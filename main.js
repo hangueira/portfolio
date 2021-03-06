@@ -63,6 +63,13 @@ workBtnContainer.addEventListener('click', (e) => {
   if(filter == null) {
     return;
   }
+  // 현재 active로 되어있는거 지우고 선택된거 active
+  const active = document.querySelector('.work__categories__btn.active');
+  active.classList.remove('active');
+  const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+  target.classList.add('active');
+
+
   projectContainer.classList.add('anim-out');
   
   setTimeout(() => {
