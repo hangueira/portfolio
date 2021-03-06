@@ -14,6 +14,8 @@ document.addEventListener('scroll', () => {
   }
 })
 
+
+
 // navbar click scroll event
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event) => {
@@ -24,9 +26,17 @@ navbarMenu.addEventListener('click', (event) => {
   }
   // const scrollTo = document.querySelector(link);
   // scrollTo.scrollIntoView({ behavior: "smooth" });
+  navbarMenu.classList.remove('open');
   scrollIntoView(link);
 
 });
+
+// navbat toggle button 
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
+});
+
 
 const homeContact = document.querySelector('.home__contact');
 homeContact.addEventListener('click', (event) => {
