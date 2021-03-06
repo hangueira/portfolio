@@ -24,6 +24,11 @@ navbarMenu.addEventListener('click', (event) => {
   if (link == null) {
     return;
   }
+  // 현재 active로 되어있는거 지우고 선택된거 active
+  const active = document.querySelector('.navbar__menu__item.active');
+  active.classList.remove('active');
+  target.classList.add('active');
+
   // const scrollTo = document.querySelector(link);
   // scrollTo.scrollIntoView({ behavior: "smooth" });
   navbarMenu.classList.remove('open');
