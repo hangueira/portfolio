@@ -257,7 +257,8 @@ button {
   text-align: left;
 }
 .job__name,
-.job__period {
+.job__period,
+.job__detail {
   color: var(--black-small);
 }
 
@@ -267,6 +268,15 @@ button {
 
 .job__period {
   font-size: var(--font-micro);
+}
+
+.job__detail {
+  font-size: var(--font-micro);
+}
+
+.job > img {
+  width: 30px;
+  height: 30px;
 }
 
 #skills {
